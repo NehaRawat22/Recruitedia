@@ -34,9 +34,9 @@ const Home = () => {
                 </span>
               </h3>
 
-              <div className="px-9 left-25">
+              <div>
                 <Link to="/login">
-                <button className="py-12 px-10">
+                <button className="py-12">
                   <a
                     className="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-blue-700 rounded-xl group"
                   >
@@ -51,7 +51,7 @@ const Home = () => {
                 </button>
                 </Link>
                 <Link to="/login">
-                <button className="py-12 px-3">
+                <button className="px-3">
                   <a
                     className="relative inline-flex items-center justify-start px-7 py-3 overflow-hidden font-medium transition-all bg-blue-600 rounded-xl group"
                   >
