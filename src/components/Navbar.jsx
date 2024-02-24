@@ -30,7 +30,7 @@ const Navbar = () => {
                 alt=""
                 className="w-10 inline block items-center"
               />
-              <span>Recruitedia</span>
+              <span>Recruitedias</span>
             </a>
 
             <ul className="md:flex space-x-12 hidden">
