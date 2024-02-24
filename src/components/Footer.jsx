@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <>
       <div
-        className="bg-[#010851] max-w-screen-2xl mx-auto text-white"
+        className="bg-[#010851] text-white max-w-screen-2xl mx-auto mt-20"
         id="contact"
       >
         <svg

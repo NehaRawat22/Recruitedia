@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <>
-      <div className="md:px-12 p-4 max-w-screen-2xl mx-auto mt-20" id="home">
+      <div className="md:px-14 p-4 max-w-screen-2xl mx-auto mt-20" id="home">
         <div className="gradientBg rounded-xl py-34">
           <div className="flex md:flex-row-reverse justify-between items-center gap-10">
             <div className="pt-60 flex justify-center"></div>
@@ -14,7 +14,7 @@ const Home = () => {
             variants={fadeIn("up",0.2)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{once:false, amount:0.7}}
+            viewport={{once:true, amount:0.7}}
             className="md:w-3.5/5">
               <h2 className="head md:text-6xl text-4xl font-bold text-white leading-relaxed py-20 px-5">
                 Welcome to Career Development Cell
@@ -29,7 +29,7 @@ const Home = () => {
                     Better
                   </span>
                   <span className="absolute h-full w-full -translate-y-full animate-slide leading-none text-blue [animation-delay:3.3s]">
-                    Maintained
+                    Fine
                   </span>
                 </span>
               </h3>

@@ -18,19 +18,19 @@ const Navbar = () => {
   ];
   return (
     <>
-      <nav className="bg-white md:px-14 p-4 max-w-screen-2xl mx-auto text-primary fixed top-0 right-0 left-0">
-        <div className="text-xl container mx-auto flex justify-between items-center font-medium">
+      <nav className="bg-white md:px-14 p-4 max-w-screen-xl mx-auto text-primary fixed top-0 right-0 left-0">
+        <div className="text-xl mx-auto flex justify-between">
           <div className="flex space-x-14 items-center">
             <a
               href="/"
-              className="text-2xl font semibold flex items-center space-x-3 text-primary"
+              className="md:px-10 text-2xl font semibold flex items-center space-x-3 text-blue"
             >
               <img
                 src={logo}
                 alt=""
                 className="w-10 inline block items-center"
               />
-              <span>Recruitedias</span>
+              <span>Recruitedia</span>
             </a>
 
             <ul className="md:flex space-x-12 hidden">
@@ -50,7 +50,7 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <div className="md:hidden">
+          <div className="md:hidden md:px-14 p-9">
             <button
               onClick={toggleMenu}
               className="text-white focus:outline-none focus:text-gray-300"
@@ -66,8 +66,8 @@ const Navbar = () => {
       </nav>
 
       <div
-        className={`space-y-4 px-5 pt-24 pb-5 bg-secondary text-xl ${
-          isMenuOpen ? "block fixed top-0 right-0 left-0" : "hidden"
+        className={`space-y-4 md:px-10 p-9 px-5 pt-24 pb-5 bg-secondary text-xl ${
+          isMenuOpen ? "block relative top-0 right-0 left-0" : "hidden"
         }`}
       >
         {navItems.map(({ link, path }) => (

@@ -9,7 +9,7 @@ import { fadeIn } from '../variants';
 
 const Recruiters = () => {
   return (
-    <div className="md:px-14 p-4 max-w-s mx-auto py-10">
+    <div className="md:px-14 p-4 max-w-screen-2xl mx-auto mt-20">
       <div className="text-center">
         <h2 className="md:text-5xl text-3xl font-bold text-primary mb-2">
           Our Recruiters
@@ -25,32 +25,32 @@ const Recruiters = () => {
         variants={fadeIn("up",0.2)}
         initial="hidden"
         whileInView={"show"}
-        viewport={{once:false, amount:0.5}}
+        viewport={{once:true, amount:0.1}}
         className="grid sm:grid-cols-3 lg:grid-cols-5 gap-10 mt-20 md:w-11/12 mx-auto">
           <img
             src={company1}
             alt=""
-            className="border py-10 md:px-6 px-4 rounded-lg shadow-3xl"
+            className="border py-10 md:px-6 md:py-10 px-4 rounded-lg shadow-3xl"
           />
           <img
             src={company2}
             alt=""
-            className="border py-5 md:px-6 px-4 rounded-lg shadow-3xl"
+            className="border py-5 md:px-6 md:py-5 px-4 rounded-lg shadow-3xl"
           />
           <img
             src={company3}
             alt=""
-            className="border py-5 md:px-6 px-4 rounded-lg shadow-3xl"
+            className="border py-5 md:px-6 md:py-5 px-4 rounded-lg shadow-3xl"
           />
           <img
             src={company4}
             alt=""
-            className="border py-11 md:px-6 px-4 rounded-lg shadow-3xl"
+            className="border py-11 md:px-6 md:py-11 px-4 rounded-lg shadow-3xl"
           />
           <img
             src={company5}
             alt=""
-            className="border py-11 md:px-6 px-4 rounded-lg shadow-3xl"
+            className="border py-11 md:px-6 md:py-11 px-4 rounded-lg shadow-3xl"
           />
         </motion.div>
       </div>
