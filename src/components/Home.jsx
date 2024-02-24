@@ -34,7 +34,7 @@ const Home = () => {
                 </span>
               </h3>
 
-              <div>
+              <div className="px-9">
                 <Link to="/login">
                 <button className="py-12">
                   <a
