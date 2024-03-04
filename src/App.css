@@ -1,6 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
 
+:root {
+  --PrimaryColor: rgba(1, 8, 81, 1);
+  --HoverColor: rgb(29, 78, 216, 1);
+  --paleBlue: rgb(115, 142, 216);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --bgColor: hsl(220, 10%, 94%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+}
+
+html {
+  font-size: 90%;
+}
 h3 {
   font-family: "Jost", sans-serif;
 }
@@ -13,4 +36,67 @@ nav {
 }
 .gradientBg {
   background-image: url("../src/assets/background.webp");
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.iconn {
+  font-size: var(--h2FontSize);
+}
+.imgg {
+  width: 100%;
+  height: auto;
+}
+.flexer {
+  display: flex;
+  align-items: center;
+}
+.grider {
+  display: grid;
+  align-items: center;
+  gap: 1.5rem;
+}
+.btnn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px var(--inputColor);
+  padding: 0.8rem 1rem;
+  color: var(--textColor);
+}
+
+.btnn .iconn {
+  margin-left: 0.5rem;
+}
+.btnn:hover {
+  background: var(--paleBlue);
+  color: var(--PrimaryColor);
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 1rem;
+}
+.containn {
+  position: relative;
+  width: 95vw;
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bgColor);
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 8px var(--greyText);
+}
+
+::-webkit-scrollbar {
+  display: none;
 }

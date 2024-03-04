@@ -35,7 +35,7 @@ const Home = () => {
               </h3>
 
               <div className="px-9">
-                <Link to="/login">
+                <Link to="/dashboard">
                 <button className="py-12">
                   <a
                     className="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-blue-700 rounded-xl group"
