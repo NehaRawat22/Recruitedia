@@ -148,3 +148,69 @@
   right: -70px;
   z-index: 1;
 }
+/* Media Queries */
+@media screen and (max-width: 990px) {
+  .sideBar {
+    padding-bottom: 2rem;
+  }
+  .sideBar .sideBarCard {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 950px) {
+  .sideBar .logoDiv {
+    text-align: center;
+    margin: auto;
+    padding: 1.5rem;
+  }
+  .sideBar .logoDiv img {
+    max-width: 50px;
+    margin: 0;
+    border-radius: 10px;
+    padding: 0.5rem;
+  }
+  .sideBar .logoDiv h2 {
+    display: none;
+  }
+  .sideBar .menuDiv .divTitle,
+  .sideBar .settingsDiv .divTitle,
+  .sideBar .menuDiv .smallText,
+  .sideBar .settingsDiv .smallText {
+    display: none;
+  }
+  .sideBar .menuDiv .menuLists .listItem .menuLink,
+  .sideBar .settingsDiv .menuLists .listItem .menuLink {
+    justify-content: center;
+  }
+  .sideBar .menuDiv .menuLists .listItem .menuLink .iconn,
+  .sideBar .settingsDiv .menuLists .listItem .menuLink .iconn {
+    font-size: 2.2rem;
+  }
+}
+@media screen and (max-width: 520px) {
+  .sideBar .logoDiv {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+  .sideBar .logoDiv .iconn {
+    width: 40px;
+  }
+  .sideBar .menuDiv,
+  .sideBar .settingsDiv {
+    text-align: center;
+    margin: auto;
+  }
+  .sideBar .menuDiv .menuLists .listItem,
+  .sideBar .settingsDiv .menuLists .listItem {
+    padding: 0.2rem 0.5rem;
+  }
+  .sideBar .menuDiv .menuLists .listItem .menuLink,
+  .sideBar .settingsDiv .menuLists .listItem .menuLink {
+    justify-content: center;
+  }
+  .sideBar .menuDiv .menuLists .listItem .menuLink .iconn,
+  .sideBar .settingsDiv .menuLists .listItem .menuLink .iconn {
+    font-size: 1rem;
+  }
+}

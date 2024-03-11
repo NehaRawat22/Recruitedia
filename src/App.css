@@ -100,3 +100,27 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
+
+@media screen and (max-width: 1160px) {
+  .headings {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 918px) {
+  .headings {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .headings {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+}

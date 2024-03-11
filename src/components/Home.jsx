@@ -1,5 +1,5 @@
-import {motion} from 'framer-motion';
-import { fadeIn } from '../variants';
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 
 import { Link } from "react-router-dom";
 
@@ -10,12 +10,13 @@ const Home = () => {
         <div className="gradientBg rounded-xl py-34">
           <div className="flex md:flex-row-reverse justify-between items-center gap-10">
             <div className="pt-60 flex justify-center"></div>
-            <motion.div 
-            variants={fadeIn("up",0.2)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{once:true, amount:0.7}}
-            className="md:w-3.5/5">
+            <motion.div
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true, amount: 0.7 }}
+              className="md:w-3.5/5"
+            >
               <h2 className="head md:text-6xl text-4xl font-bold text-white leading-relaxed py-20 px-5">
                 Welcome to Career Development Cell
               </h2>
@@ -35,9 +36,9 @@ const Home = () => {
               </h3>
 
               <div className="px-9">
-                <Link to="/dashboard">
                 <button className="py-12">
-                  <a
+                  <Link
+                    to="/dashboard"
                     className="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-blue-700 rounded-xl group"
                   >
                     <span className="absolute top-0 right-0 inline-block w-6 h-6 transition-all duration-500 ease-in-out bg-blue-900 rounded group-hover:-mr-4 group-hover:-mt-4">
@@ -47,12 +48,12 @@ const Home = () => {
                     <span className="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-white text-xl">
                       Administrator
                     </span>
-                  </a>
+                  </Link>
                 </button>
-                </Link>
-                <Link to="/login">
+
                 <button className="px-3">
-                  <a
+                  <Link
+                    to="/login"
                     className="relative inline-flex items-center justify-start px-7 py-3 overflow-hidden font-medium transition-all bg-blue-600 rounded-xl group"
                   >
                     <span className="absolute top-0 right-0 inline-block w-6 h-6 transition-all duration-500 ease-in-out bg-blue-800 rounded group-hover:-mr-4 group-hover:-mt-4">
@@ -62,9 +63,8 @@ const Home = () => {
                     <span className="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-white text-xl">
                       Student
                     </span>
-                  </a>
+                  </Link>
                 </button>
-                </Link>
               </div>
             </motion.div>
           </div>

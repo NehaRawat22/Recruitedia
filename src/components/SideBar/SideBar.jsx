@@ -14,7 +14,7 @@ const SideBar = () => {
   return (
     <div className="sideBar grider">
       <div className="logoDiv flexer">
-        <img src={logo} alt="" className="w-12" />
+        <img src={logo} alt="" className="iconn" />
         <h2>Recruitedia</h2>
       </div>
 

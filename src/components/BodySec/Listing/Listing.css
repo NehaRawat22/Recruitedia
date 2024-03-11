@@ -1,0 +1,151 @@
+:root {
+  --PrimaryColor: rgba(1, 8, 81, 1);
+  --HoverColor: rgb(29, 78, 216, 1);
+  --paleBlue: rgb(115, 142, 216);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --bgColor: hsl(220, 10%, 94%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+  --itemCardColor: hsl(220, 5%, 88%);
+  --itemCardHover: hsl(210, 27%, 87%);
+
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+}
+
+.listingSection {
+  flex-basis: 70%;
+}
+.listingSection .headings {
+  width: 100%;
+  justify-content: space-between;
+}
+.listingSection .headings h1 {
+  font-size: var(--h2FontSize);
+  color: var(--blackColor);
+  font-weight: 700;
+}
+.listingSection .headings .btnn {
+  border: 1px solid transparent;
+  font-weight: 500;
+}
+.listingSection .headings .btnn:hover {
+  border: 1px solid var(--PrimaryColor);
+}
+.listingSection .secContainer {
+  width: 100%;
+  margin: 1rem 0;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.listingSection .secContainer .singleItem {
+  position: relative;
+  width: 150px;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 10px;
+  background: var(--itemCardColor);
+}
+.listingSection .secContainer .singleItem:hover {
+  background: var(--itemCardHover);
+  box-shadow: 0 2px 2px var(--inputColor);
+}
+.listingSection .secContainer .singleItem img {
+  max-width: 100px;
+}
+.listingSection .secContainer .singleItem .iconn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: var(--PrimaryColor);
+}
+.listingSection .secContainer .singleItem h3 {
+  font-size: var(--h3FontSize);
+  color: var(--blackColor);
+  padding: 1rem 0;
+}
+.listingSection .company {
+  width: 100%;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.listingSection .company .topCompanies .headings,
+.listingSection .company .pastCompanies .headings {
+  padding: 1rem 0;
+}
+.listingSection .company .topCompanies .headings .btnn,
+.listingSection .company .pastCompanies .headings .btnn {
+  padding: 0.5rem 1rem;
+}
+.listingSection .company .topCompanies .headings h3,
+.listingSection .company .pastCompanies .headings h3 {
+  font-size: var(--h2FontSize);
+  font-weight: 600;
+}
+.listingSection .company .topCompanies .cards,
+.listingSection .company .pastCompanies .cards {
+  padding: 1rem;
+  border-radius: 1rem;
+  background: var(--whiteColor);
+  gap: 1rem;
+  box-shadow: 0 2px 4px var(--inputColor);
+}
+.listingSection .company .topCompanies .cards .recruiters,
+.listingSection .company .pastCompanies .cards .recruiters {
+  padding-right: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.listingSection .company .topCompanies .cards .recruiters img,
+.listingSection .company .pastCompanies .cards .recruiters img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--inputColor);
+  transition: 0.5s ease;
+}
+.listingSection .company .topCompanies .cards .recruiters img:hover,
+.listingSection .company .pastCompanies .cards .recruiters img:hover {
+  transform: translateY(-10px);
+}
+.listingSection .company .topCompanies .cards .cardText span,
+.listingSection .company .pastCompanies .cards .cardText span {
+  color: var(--blackColor);
+  font-weight: 500;
+}
+.listingSection .company .topCompanies .cards .cardText span small,
+.listingSection .company .pastCompanies .cards .cardText span small {
+  font-weight: 400;
+}
+/* Media Queries */
+@media screen and (max-width: 1470px) {
+  .listingSection .company .cards {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 888px) {
+  .listingSection .singleItem {
+    width: 200px !important;
+  }
+}
+@media screen and (max-width: 875px) {
+  .listingSection .company {
+    flex-direction: column;
+  }
+  .listingSection .company .cards {
+    flex-direction: row;
+  }
+}

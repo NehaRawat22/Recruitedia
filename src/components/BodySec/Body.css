@@ -9,3 +9,11 @@
   gap: 2rem;
   align-items: flex-start;
 }
+
+/* Media Queries */
+
+@media screen and (max-width: 960px) {
+  .bottomer {
+    flex-direction: column;
+  }
+}

@@ -66,17 +66,6 @@ const Top = () => {
             <div className="imgDiv">
               <img src={side} alt="" />
             </div>
-
-            {/* <div className="sideBarCard">
-        <FaRegCircleQuestion className="iconn" />
-        <div className="cardContent">
-          <div className="circle1"></div>
-          <div className="circle2"></div>
-          <h3>Help Center</h3>
-          <p>Having trouble in Recruitedia, please contact us for more questions</p>
-          <button className="btnn">Go to help center</button>
-        </div>
-      </div> */}
           </div>
         </div>
       </div>

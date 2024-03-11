@@ -91,7 +91,7 @@
 .topSection .cardSection .rightCard .videoDiv {
   position: absolute;
   height: 100%;
-  width: 100%;
+  width: 500%;
   top: 0;
   right: 0;
   bottom: 0;
@@ -163,6 +163,7 @@
   font-size: var(--h1FontSize);
   padding-bottom: 1rem;
   color: var(--blackColor);
+  font-weight: 600;
 }
 .topSection .cardSection .leftCard .mains .textDiv .flexer {
   gap: 1.5rem;
@@ -192,4 +193,68 @@
 }
 .topSection .cardSection .leftCard .mains .imgDiv img {
   width: 200px;
+}
+/* Media Queries */
+@media screen and (max-width: 1090px) {
+  .cardSection {
+    flex-direction: column;
+  }
+  .cardSection .rightCard,
+  .cardSection .leftCard {
+    width: 100%;
+    flex-basis: 100%;
+  }
+  .cardSection .leftCard {
+    width: fit-content;
+  }
+}
+@media screen and (max-width: 990px) {
+  .headerSection .searchBar {
+    display: none;
+  }
+}
+@media screen and (max-width: 840px) {
+  .headerSection .adminDiv {
+    display: none;
+  }
+  .headerSection .titler {
+    text-align: center;
+    margin: auto;
+  }
+  .cardSection .rightCard {
+    text-align: center;
+  }
+  .cardSection .rightCard .btnns {
+    margin: auto;
+    flex-direction: column;
+  }
+  .cardSection .rightCard .btnn {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .cardSection .rightCard .videoDiv {
+    width: 490%;
+  }
+}
+@media screen and (max-width: 502px) {
+  .cardSection .leftCard .mains {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .cardSection .leftCard .mains .textDiv {
+    margin: auto;
+  }
+  .cardSection .leftCard .mains::before {
+    width: 100% !important;
+  }
+  .cardSection .leftCard .mains .imgDiv {
+    display: none;
+  }
+}
+@media screen and (max-width: 670px) {
+  .company {
+    flex-direction: column;
+  }
 }
