@@ -4,11 +4,11 @@ import { IoMdSpeedometer } from "react-icons/io";
 import { PiStudentFill } from "react-icons/pi";
 import { GoOrganization } from "react-icons/go";
 import { FaAward } from "react-icons/fa6";
-import { GiPieChart } from "react-icons/gi";
 import { FaArrowTrendUp } from "react-icons/fa6";
 import { IoIosContacts } from "react-icons/io";
 import { SlCalender } from "react-icons/sl";
 import { FaRegCircleQuestion } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const SideBar = () => {
   return (
@@ -22,10 +22,10 @@ const SideBar = () => {
         <h3 className="divTitle">QUICK MENU</h3>
         <ul className="menuLists grider">
           <li className="listItem">
-            <a href="#" className="menuLink flexer">
+            <Link to="/dashboard" className="menuLink flexer">
               <IoMdSpeedometer className="iconn" />
               <span className="smallText">Dashboard</span>
-            </a>
+            </Link>
           </li>
 
           <li className="listItem">
@@ -36,10 +36,10 @@ const SideBar = () => {
           </li>
 
           <li className="listItem">
-            <a href="#" className="menuLink flexer">
+            <Link to="/departments" className="menuLink flexer">
               <GoOrganization className="iconn" />
               <span className="smallText">Departments</span>
-            </a>
+            </Link>
           </li>
 
           <li className="listItem">
@@ -54,12 +54,7 @@ const SideBar = () => {
       <div className="settingsDiv">
         <h3 className="divTitle">SETTINGS</h3>
         <ul className="menuLists grider">
-          <li className="listItem">
-            <a href="#" className="menuLink flexer">
-              <GiPieChart className="iconn" />
-              <span className="smallText">Charts</span>
-            </a>
-          </li>
+
 
           <li className="listItem">
             <a href="#" className="menuLink flexer">
