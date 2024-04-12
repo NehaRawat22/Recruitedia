@@ -151,7 +151,7 @@
 /* Media Queries */
 @media screen and (max-width: 990px) {
   .sideBar {
-    padding-bottom: 2rem;
+    padding-bottom: 15rem;
   }
 }
 @media screen and (max-width: 950px) {
@@ -193,6 +193,9 @@
 @media screen and (max-width: 756px){
   .sideBar .sideBarCard {
     display: none !important;
+  }
+  .cardContent{
+    width: 12px;
   }
 }
 @media screen and (max-width: 520px) {
