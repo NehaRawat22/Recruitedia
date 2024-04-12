@@ -13,7 +13,7 @@ import Register from "./components/Register";
 import Faq from "./components/FAQ/Faq";
 import Dashes from "./components/DashFeatures/Dashes";
 import PlacedStu from "./components/Placed/PlacedStu";
-import UserData from "./components/Placed/UserData";
+import Jobs from "./components/Update/Jobs";
 
 function App() {
   return (
@@ -38,21 +38,34 @@ function App() {
               <SideBar /> <Body />
             </div>
           }
-        ></Route >
-        <Route path="/departments"
-        element={
-          <div className="containn">
-            <SideBar/><Dashes/>
-          </div>
-        }>
-        </Route>
-        <Route path="/stu"
-        element={
-          <div className="containn">
-            <SideBar/><PlacedStu/>
-          </div>
-        }>
-        </Route>
+        ></Route>
+        <Route
+          path="/departments"
+          element={
+            <div className="containn">
+              <SideBar />
+              <Dashes />
+            </div>
+          }
+        ></Route>
+        <Route
+          path="/stu"
+          element={
+            <div className="containn">
+              <SideBar />
+              <PlacedStu />
+            </div>
+          }
+        ></Route>
+        <Route
+          path="/jobs"
+          element={
+            <div className="containn">
+              <SideBar />
+              <Jobs />
+            </div>
+          }
+        ></Route>
       </Routes>
     </Router>
   );

@@ -1,5 +1,6 @@
 import "./SideBar.css";
 import logo from "../../assets/logo.png";
+import { IoIosLogOut } from "react-icons/io";
 import { PiSuitcaseSimple } from "react-icons/pi";
 import { PiStudentFill } from "react-icons/pi";
 import { GoOrganization } from "react-icons/go";
@@ -16,7 +17,6 @@ const SideBar = () => {
       </div>
 
       <div className="menuDiv">
-        <h3 className="divTitle">QUICK MENU</h3>
         <ul className="menuLists grider">
           <li className="listItem">
             <Link to="/dashboard" className="menuLink flexer">
@@ -26,10 +26,10 @@ const SideBar = () => {
           </li>
 
           <li className="listItem">
-            <a href="#" className="menuLink flexer">
+            <Link to="/jobs" className="menuLink flexer">
               <PiSuitcaseSimple className="iconn" />
-              <span className="smallText">Add Drive</span>
-            </a>
+              <span className="smallText">Update Jobs</span>
+            </Link>
           </li>
 
           <li className="listItem">
@@ -45,6 +45,13 @@ const SideBar = () => {
               <span className="smallText">Placed Students</span>
             </Link>
           </li>
+
+          <li className="listItem">
+            <Link to="/" className="menuLink flexer">
+              <IoIosLogOut className="iconn" />
+              <span className="smallText">Log Out</span>
+            </Link>
+          </li>
         </ul>
       </div>
 
@@ -53,11 +60,13 @@ const SideBar = () => {
         <div className="cardContent">
           <div className="circle1"></div>
           <div className="circle2"></div>
-          <h3>Help Center</h3>
+          <h3>Help</h3>
           <p>
             Having trouble in Recruitedia, please contact us for more questions
           </p>
-          <button className="btnn">Go to help center</button>
+          <Link to="/faq">
+            <button className="btnn">Go to FAQs</button>
+          </Link>
         </div>
       </div>
     </div>

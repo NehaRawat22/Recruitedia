@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+:root {
+  --PrimaryColor: rgba(1, 8, 81, 1);
+  --HoverColor: rgba(29, 78, 216, 1);
+  --paleBlue: rgb(115, 142, 216);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(0, 0%, 41%);
+  --bgColor: hsl(220, 10%, 94%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+}
+
+.containe {
+  background: #fff;
+  padding: 25px 40px 10px 40px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.containe .text {
+  text-align: center;
+  font-size: 41px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  background: -webkit-linear-gradient(
+    right,
+    rgba(29, 78, 216, 1),
+    rgb(115, 142, 216),
+    rgba(29, 78, 216, 1),
+    rgb(115, 142, 216)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.containe form {
+  padding: 30px 0 0 0;
+}
+.containe form .form-rowed {
+  display: flex;
+  margin: 32px 0;
+}
+form .form-rowed .input-datas {
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+}
+form .form-rowed .textarea {
+  height: 70px;
+}
+.input-datas input,
+.textarea textarea {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+}
+.input-datas input:focus ~ label,
+.textarea textarea:focus ~ label,
+.input-datas input:valid ~ label,
+.textarea textarea:valid ~ label {
+  transform: translateY(-40px);
+  font-size: 14px;
+  color: #3498db;
+}
+.textarea textarea {
+  resize: none;
+  padding-top: 10px;
+}
+.input-datas label {
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.textarea label {
+  width: 100%;
+  bottom: 40px;
+  background: #fff;
+}
+.input-datas .underliner {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+.input-datas .underliner:before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #3498db;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.input-datas input:focus ~ .underline:before,
+.input-datas input:valid ~ .underline:before,
+.textarea textarea:focus ~ .underline:before,
+.textarea textarea:valid ~ .underline:before {
+  transform: scale(1);
+}
+.submit-btn .input-datas {
+  overflow: hidden;
+  height: 45px !important;
+  width: 25% !important;
+}
+.submit-btn .input-datas .inner {
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  background: -webkit-linear-gradient(
+    right,
+    rgba(29, 78, 216, 1),
+    rgb(115, 142, 216),
+    rgba(29, 78, 216, 1),
+    rgb(115, 142, 216)
+  );
+  transition: all 0.4s;
+}
+.submit-btn .input-datas:hover .inner {
+  left: 0;
+}
+.submit-btn .input-datas input {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 700px) {
+  .containe .text {
+    font-size: 30px;
+  }
+  .containe form {
+    padding: 10px 0 0 0;
+  }
+  .containe form .form-rowed {
+    display: block;
+  }
+  form .form-rowed .input-datas {
+    margin: 55px 0 !important;
+  }
+  .submit-btn .input-datas {
+    width: 40% !important;
+  }
+}
+@media (max-width: 1055px) {
+  .containe {
+    margin: 20px;
+  }
+  .containe .text {
+    font-size: 15px;
+    width: 500px;
+    padding: 15px 30px 5px 20px;
+    margin: 1px auto;
+  }
+  .containe form {
+    padding: 10px 0 0 0;
+  }
+  .containe form .form-rowed {
+    display: block;
+  }
+  form .form-rowed .input-datas {
+    margin: 25px 0 !important;
+  }
+  .submit-btn .input-datas {
+    width: 40% !important;
+  }
+}
