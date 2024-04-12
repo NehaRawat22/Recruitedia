@@ -6,15 +6,18 @@ import student2 from "../../../assets/student2.avif";
 import student3 from "../../../assets/student3.jpg";
 import student4 from "../../../assets/student4.avif";
 import admin1 from "../../../assets/pic.jpg";
+import { Link } from "react-router-dom";
 
 const Activity = () => {
   return (
     <div className="activitySection">
       <div className="headings flexer">
         <h1>Recent Activities</h1>
-        <button className="btnn">
-          See All <BsArrowRightShort className="iconn" />
-        </button>
+        <Link to="/recent">
+          <button className="btnn">
+            See All <BsArrowRightShort className="iconn" />
+          </button>
+        </Link>
       </div>
 
       <div className="secContainer grider">

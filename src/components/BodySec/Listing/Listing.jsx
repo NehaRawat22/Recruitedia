@@ -11,15 +11,18 @@ import drive7 from "../../../assets/company2.webp";
 import { BsArrowRightShort } from "react-icons/bs";
 import { IoIosStar } from "react-icons/io";
 import { IoStarOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const Listing = () => {
   return (
     <div className="listingSection">
       <div className="headings flexer">
         <h1>Upcoming Drives</h1>
-        <button className="btnn flexer">
-          See All <BsArrowRightShort className="iconn" />
-        </button>
+        <Link to="/explore">
+          <button className="btnn flexer">
+            See All <BsArrowRightShort className="iconn" />
+          </button>
+        </Link>
       </div>
 
       <div className="secContainer flexer">
@@ -52,9 +55,11 @@ const Listing = () => {
         <div className="topCompanies">
           <div className="headings flexer">
             <h3>Top Recruiters</h3>
-            <button className="btnn flexer">
-              See All <BsArrowRightShort className="iconn" />
-            </button>
+            <Link to="/recent">
+              <button className="btnn flexer">
+                See All <BsArrowRightShort className="iconn" />
+              </button>
+            </Link>
           </div>
 
           <div className="cards flexer">
@@ -78,9 +83,11 @@ const Listing = () => {
         <div className="pastCompanies">
           <div className="headings flexer">
             <h3>Past Recruiters</h3>
-            <button className="btnn flexer">
-              See All <BsArrowRightShort className="iconn" />
-            </button>
+            <Link to="/recent">
+              <button className="btnn flexer">
+                See All <BsArrowRightShort className="iconn" />
+              </button>
+            </Link>
           </div>
 
           <div className="cards flexer">

@@ -33,6 +33,13 @@ const Jobs = () => {
               </div>
             </div>
             <div className="form-rowed">
+              <div className="input-datas">
+                <input type="text" required />
+                <div className="underliner"></div>
+                <label htmlFor="img">Image URL</label>
+              </div>
+            </div>
+            <div className="form-rowed">
               <div className="input-datas textarea">
                 <textarea rows="8" cols="80" required></textarea>
                 <br />

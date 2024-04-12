@@ -15,6 +15,7 @@ import Dashes from "./components/DashFeatures/Dashes";
 import PlacedStu from "./components/Placed/PlacedStu";
 import Jobs from "./components/Update/Jobs";
 import Drives from "./components/Recents/Drives";
+import Explore from "./components/Recents/Explore";
 
 function App() {
   return (
@@ -72,7 +73,16 @@ function App() {
           element={
             <div className="containn">
               <SideBar />
-              <Drives/>
+              <Drives />
+            </div>
+          }
+        ></Route>
+        <Route
+          path="/explore"
+          element={
+            <div className="containn">
+              <SideBar />
+              <Explore />
             </div>
           }
         ></Route>
