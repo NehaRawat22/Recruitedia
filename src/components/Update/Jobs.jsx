@@ -4,7 +4,7 @@ import "./Jobs.css";
 const Jobs = () => {
   return (
     <>
-      <div className="mainer">
+      <div className="mainContent">
         <div className="containe">
           <div className="titler">Update the Job</div>
           <form action="#">

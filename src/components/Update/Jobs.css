@@ -145,9 +145,16 @@ form .form-rowed .textarea {
   position: relative;
   z-index: 2;
 }
-@media (max-width: 700px) {
+@media (max-width: 715px) {
+  .containe {
+    margin: 0 15px;
+    width: fit-content;
+  }
   .containe .text {
-    font-size: 30px;
+    font-size: 12px;
+    width: 300px;
+    padding: 12px 25px 3px 15px;
+    margin: 1px auto;
   }
   .containe form {
     padding: 10px 0 0 0;
@@ -156,7 +163,7 @@ form .form-rowed .textarea {
     display: block;
   }
   form .form-rowed .input-datas {
-    margin: 55px 0 !important;
+    margin: 25px 0 !important;
   }
   .submit-btn .input-datas {
     width: 40% !important;
@@ -164,7 +171,8 @@ form .form-rowed .textarea {
 }
 @media (max-width: 1055px) {
   .containe {
-    margin: 20px;
+    margin: 0 20px;
+    width: fit-content;
   }
   .containe .text {
     font-size: 15px;
