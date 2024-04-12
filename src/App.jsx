@@ -14,6 +14,7 @@ import Faq from "./components/FAQ/Faq";
 import Dashes from "./components/DashFeatures/Dashes";
 import PlacedStu from "./components/Placed/PlacedStu";
 import Jobs from "./components/Update/Jobs";
+import Drives from "./components/Recents/Drives";
 
 function App() {
   return (
@@ -63,6 +64,15 @@ function App() {
             <div className="containn">
               <SideBar />
               <Jobs />
+            </div>
+          }
+        ></Route>
+        <Route
+          path="/recent"
+          element={
+            <div className="containn">
+              <SideBar />
+              <Drives/>
             </div>
           }
         ></Route>

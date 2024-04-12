@@ -55,9 +55,11 @@ const Top = () => {
                 </span>
               </div>
 
+              <Link to="/recent">
               <span className="linker flexer">
                 Go to recent drives <BsArrowRightShort className="iconn" />
               </span>
+              </Link>
             </div>
 
             <div className="imgDiv">
