@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Lexend+Deca:wght@100;200;300;400;500;600;700&family=Poppins:wght@300;400;600&display=swap');
+
+.mainContent{
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: auto;
+}
+.tabl {
+  margin: 5rem auto;
+  border-radius: 2rem;
+  border: 1rem hidden #443C68;
+  border-collapse: collapse;
+  box-shadow: 0 0 0 1px black;
+  overflow: hidden;
+  max-width: 80rem;
+}
+
+.dataa{
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.headd {
+  font-size: 1.5rem;
+  color:#443C68;
+}
+
+.tabl-headi,
+.dataa {
+  border: 1px solid #443C68;
+  padding: 1.5rem;
+  line-height: 1.7;
+}
+
+.dataa {
+  font-size: 1.4rem;
+}
+
+@media (max-width: 984px) {
+    .tabl-headi{
+        font-size: 16px;
+        line-height: 1.2;
+    } 
+    .dataa{
+        font-size: 14px;
+        line-height: 1.2;
+    }
+}
+@media (max-width: 772px) {
+    .tabl-headi{
+        font-size: 12px;
+        line-height: 1;
+    } 
+    .dataa{
+        font-size: 10px;
+        line-height: 1;
+    }
+}
+@media (max-width: 632px) {
+    .tabl-headi{
+        font-size: 10px;
+        line-height: 0.8;
+    } 
+    .dataa{
+        font-size: 8px;
+        line-height: 0.8;
+    }
+}
+@media (max-width: 570px) {
+    .tabl-headi{
+        font-size: 8px;
+        line-height: 0.8;
+    } 
+    .dataa{
+        font-size: 6px;
+        line-height: 0.8;
+    }
+}
+@media (max-width: 500px) {
+    .tabl-headi{
+        font-size: 6px;
+        line-height: 0.8;
+    } 
+    .dataa{
+        font-size: 4px;
+        line-height: 0.8;
+    }
+}

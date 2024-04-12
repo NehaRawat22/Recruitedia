@@ -12,6 +12,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Register from "./components/Register";
 import Faq from "./components/FAQ/Faq";
 import Dashes from "./components/DashFeatures/Dashes";
+import PlacedStu from "./components/Placed/PlacedStu";
+import UserData from "./components/Placed/UserData";
 
 function App() {
   return (
@@ -43,7 +45,13 @@ function App() {
             <SideBar/><Dashes/>
           </div>
         }>
-
+        </Route>
+        <Route path="/stu"
+        element={
+          <div className="containn">
+            <SideBar/><PlacedStu/>
+          </div>
+        }>
         </Route>
       </Routes>
     </Router>

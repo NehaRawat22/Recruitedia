@@ -1,8 +1,6 @@
 import React from "react";
 import "./Top.css";
-import { IoMdSearch } from "react-icons/io";
-import { RiMessage2Line } from "react-icons/ri";
-import { IoIosNotifications } from "react-icons/io";
+import { IoIosLogOut } from "react-icons/io";
 import img from "../../../assets/pic.jpg";
 import tech from "../../../assets/tech.mp4";
 import { BsArrowRightShort } from "react-icons/bs";
@@ -17,17 +15,12 @@ const Top = () => {
           <p>Hello Admin1, Welcome back</p>
         </div>
 
-        <div className="searchBar flexer">
-          <input type="text" placeholder="Search Dashboard" />
-          <IoMdSearch className="iconn" />
-        </div>
-
         <div className="adminDiv flexer">
-          <RiMessage2Line className="iconn" />
-          <IoIosNotifications className="iconn" />
           <div className="adminImage">
             <img src={img} alt="" />
           </div>
+          <IoIosLogOut className="iconn" />
+          
         </div>
       </div>
 

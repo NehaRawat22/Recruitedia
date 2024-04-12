@@ -1,0 +1,24 @@
+.events-listed{
+    margin-top: 20px;
+    width: 300px;
+}
+.events-listed p{
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+.events-listed ul{
+    list-style-type: none;
+    padding: 0;
+}
+.events-listed li{
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+}
+.events-listed li:hover{
+    background-color: #f0f0f0;
+}

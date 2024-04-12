@@ -1,6 +1,6 @@
 import "./SideBar.css";
 import logo from "../../assets/logo.png";
-import { IoMdSpeedometer } from "react-icons/io";
+import { PiSuitcaseSimple } from "react-icons/pi";
 import { PiStudentFill } from "react-icons/pi";
 import { GoOrganization } from "react-icons/go";
 import { FaAward } from "react-icons/fa6";
@@ -23,15 +23,15 @@ const SideBar = () => {
         <ul className="menuLists grider">
           <li className="listItem">
             <Link to="/dashboard" className="menuLink flexer">
-              <IoMdSpeedometer className="iconn" />
-              <span className="smallText">Dashboard</span>
+              <PiStudentFill className="iconn" />
+              <span className="smallText">Profile</span>
             </Link>
           </li>
 
           <li className="listItem">
             <a href="#" className="menuLink flexer">
-              <PiStudentFill className="iconn" />
-              <span className="smallText">Search Students</span>
+              <PiSuitcaseSimple className="iconn" />
+              <span className="smallText">Add Drive</span>
             </a>
           </li>
 
@@ -43,38 +43,10 @@ const SideBar = () => {
           </li>
 
           <li className="listItem">
-            <a href="#" className="menuLink flexer">
+            <Link to="/stu" className="menuLink flexer">
               <FaAward className="iconn" />
               <span className="smallText">Placed Students</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div className="settingsDiv">
-        <h3 className="divTitle">SETTINGS</h3>
-        <ul className="menuLists grider">
-
-
-          <li className="listItem">
-            <a href="#" className="menuLink flexer">
-              <FaArrowTrendUp className="iconn" />
-              <span className="smallText">Trending</span>
-            </a>
-          </li>
-
-          <li className="listItem">
-            <a href="#" className="menuLink flexer">
-              <IoIosContacts className="iconn" />
-              <span className="smallText">Contact</span>
-            </a>
-          </li>
-
-          <li className="listItem">
-            <a href="#" className="menuLink flexer">
-              <SlCalender className="iconn" />
-              <span className="smallText">Calender</span>
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
