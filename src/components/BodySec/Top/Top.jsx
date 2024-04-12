@@ -5,6 +5,7 @@ import img from "../../../assets/pic.jpg";
 import tech from "../../../assets/tech.mp4";
 import { BsArrowRightShort } from "react-icons/bs";
 import side from "../../../assets/side.webp";
+import { Link } from "react-router-dom";
 
 const Top = () => {
   return (
@@ -19,7 +20,9 @@ const Top = () => {
           <div className="adminImage">
             <img src={img} alt="" />
           </div>
+          <Link to='/'>
           <IoIosLogOut className="iconn" />
+          </Link>
           
         </div>
       </div>
@@ -30,7 +33,8 @@ const Top = () => {
           <p>Hiring was - and still is - the most important thing we do!</p>
           <div className="btnns flexer">
             <button className="btnn">Explore News</button>
-            <button className="btnn transparentt">Add Feed</button>
+            <Link to='/jobs' className="btnn transparentt">Add Feed</Link>
+            
           </div>
           <div className="videoDiv">
             <video src={tech} autoPlay loop muted></video>

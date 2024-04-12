@@ -193,3 +193,8 @@ form .form-rowed .textarea {
     width: 40% !important;
   }
 }
+@media (max-width: 496px){
+  .submit-btn .input-datas {
+    width: 100% !important;
+  }
+}
