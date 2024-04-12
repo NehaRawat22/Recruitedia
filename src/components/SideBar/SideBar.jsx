@@ -4,9 +4,6 @@ import { PiSuitcaseSimple } from "react-icons/pi";
 import { PiStudentFill } from "react-icons/pi";
 import { GoOrganization } from "react-icons/go";
 import { FaAward } from "react-icons/fa6";
-import { FaArrowTrendUp } from "react-icons/fa6";
-import { IoIosContacts } from "react-icons/io";
-import { SlCalender } from "react-icons/sl";
 import { FaRegCircleQuestion } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 

@@ -40,49 +40,59 @@
     .tabl-headi{
         font-size: 16px;
         line-height: 1.2;
+        padding: 1.2rem;
     } 
     .dataa{
         font-size: 14px;
         line-height: 1.2;
+        padding: 1.2rem;
     }
 }
 @media (max-width: 772px) {
     .tabl-headi{
         font-size: 12px;
         line-height: 1;
+        padding: 1rem;
     } 
     .dataa{
         font-size: 10px;
         line-height: 1;
+        padding: 1rem;
     }
 }
 @media (max-width: 632px) {
     .tabl-headi{
         font-size: 10px;
         line-height: 0.8;
+        padding: 0.8rem;
     } 
     .dataa{
         font-size: 8px;
         line-height: 0.8;
+        padding: 0.8rem;
     }
 }
 @media (max-width: 570px) {
     .tabl-headi{
         font-size: 8px;
         line-height: 0.8;
+        padding: 0.6rem;
     } 
     .dataa{
         font-size: 6px;
         line-height: 0.8;
+        padding: 0.6rem;
     }
 }
 @media (max-width: 500px) {
     .tabl-headi{
         font-size: 6px;
         line-height: 0.8;
+        padding: 0.4rem;
     } 
     .dataa{
         font-size: 4px;
         line-height: 0.8;
+        padding: 0.4rem;
     }
 }
