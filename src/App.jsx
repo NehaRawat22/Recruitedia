@@ -16,6 +16,7 @@ import PlacedStu from "./components/Placed/PlacedStu";
 import Jobs from "./components/Update/Jobs";
 import Drives from "./components/Recents/Drives";
 import Explore from "./components/Recents/Explore";
+import Details from "./components/Details/Details";
 
 function App() {
   return (
@@ -33,6 +34,14 @@ function App() {
         <Route path="/login" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>
         <Route path="/faq" element={<Faq />}></Route>
+        <Route
+          path="/details"
+          element={
+            <div className="containn">
+              <Details />
+            </div>
+          }
+        ></Route>
         <Route
           path="/dashboard"
           element={

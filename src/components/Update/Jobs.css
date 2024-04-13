@@ -55,6 +55,7 @@ form .form-rowed .input-datas {
 }
 form .form-rowed .textarea {
   height: 70px;
+  margin: 20px;
 }
 .input-datas input,
 .textarea textarea {
@@ -146,10 +147,6 @@ form .form-rowed .textarea {
   z-index: 2;
 }
 @media (max-width: 715px) {
-  .containe {
-    margin: 0 15px;
-    width: fit-content;
-  }
   .containe .text {
     font-size: 12px;
     width: 300px;
@@ -170,10 +167,6 @@ form .form-rowed .textarea {
   }
 }
 @media (max-width: 1055px) {
-  .containe {
-    margin: 0 20px;
-    width: fit-content;
-  }
   .containe .text {
     font-size: 15px;
     width: 500px;
@@ -198,3 +191,4 @@ form .form-rowed .textarea {
     width: 100% !important;
   }
 }
+
