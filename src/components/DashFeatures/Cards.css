@@ -54,7 +54,7 @@
   color: var(--whiteColor);
 }
 
-.cardss {
+.cardser{
   display: flex;
   flex-wrap: wrap;
   list-style: none;

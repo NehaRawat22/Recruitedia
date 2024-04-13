@@ -11,7 +11,7 @@ const Cards = () => {
     <>
       <div className="mainer">
         <h1 className="titler">Departments</h1>
-        <ul className="cardss">
+        <ul className="cardser">
           <li className="cards_item">
             <div className="carder">
               <div className="card_image">
