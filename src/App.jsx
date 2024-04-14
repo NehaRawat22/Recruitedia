@@ -1,4 +1,10 @@
 import "./App.css";
+import company1 from "./assets/company1.png";
+import company2 from "./assets/company2.webp";
+import company3 from "./assets/company3.png";
+import company4 from "./assets/dell.png";
+import company5 from "./assets/accenture.png";
+import company6 from "./assets/infosys.webp";
 import Brochure from "./components/Brochure";
 import Features from "./components/Features";
 import Footer from "./components/Footer";
@@ -18,6 +24,8 @@ import Drives from "./components/Recents/Drives";
 import Explore from "./components/Recents/Explore";
 import Details from "./components/Details/Details";
 import BodyStu from "./components/StudentPanel/BodyStu";
+import Side from "./components/StudentPanel/ProfileDet/Side";
+import Desc from "./components/Description/Desc";
 
 function App() {
   return (
@@ -125,11 +133,75 @@ function App() {
           path="/studashboard"
           element={
             <div className="containn">
-              <SideBar job="Jobs" sched="Schedule" apply="Applied Jobs" />
+              <Side job="Jobs" sched="Schedule" apply="Applied Jobs" />
               <BodyStu />
             </div>
           }
         ></Route>
+        <Route
+          path="/explorestu"
+          element={
+            <div className="containn">
+              <Side job="Jobs" sched="Schedule" apply="Applied Jobs" />
+              <Explore />
+            </div>
+          }
+        ></Route>
+        <Route
+          path="/desc1"
+          element={
+            <div className="containn">
+              <Side job="Jobs" sched="Schedule" apply="Applied Jobs" />
+              <Desc image={company1} cname="Wipro" role="Software Engineer" loc="Mumbai, India" desc="Wipro is a leading global information technology, consulting and business process services company. A company recognized globally for its comprehensive portfolio of services, strong commitment to sustainability, and good corporate citizenship, we have over 250,000 dedicated employees serving various enterprises across six continents." eligible="CSE/EE/MCA" sal="6 LPA" />
+            </div>
+          }
+        ></Route>
+        <Route
+          path="/desc2"
+          element={
+            <div className="containn">
+              <Side job="Jobs" sched="Schedule" apply="Applied Jobs" />
+              <Desc image={company2} cname="Tech Mahindra" role="SDE" loc="Bangalore, India" desc="As an associate software engineer, you'll be working in a team and on diverse projects. To be successful in this role, you must possess strong analytical, problem solving and technical skills. You must be able to communicate clearly and confidently with the clients. You must be flexible enough and ready to work in Agile environment on any type of projects including 24X7 projects." eligible="CSE/ECE" sal="4.8 LPA" />
+            </div>
+          }
+        ></Route>
+        <Route
+          path="/desc3"
+          element={
+            <div className="containn">
+              <Side job="Jobs" sched="Schedule" apply="Applied Jobs" />
+              <Desc image={company3} cname="TCS" role="Software Developer" loc="Noida, India" desc="As an Associate software engineer, you’ll be working in a team and on diverse projects. To be successful in this role, you must possess strong analytical, problem solving and technical skills. You must be able to communicate clearly and confidently with the clients. You must be flexible enough and ready to work in Agile environment on any type of projects including 24X7 projects." eligible="CSE/EE/MCA" sal="5.5 LPA" />
+            </div>
+          }
+        ></Route>
+        <Route
+          path="/desc4"
+          element={
+            <div className="containn">
+              <Side job="Jobs" sched="Schedule" apply="Applied Jobs" />
+              <Desc image={company4} cname="Dell" role="BDA" loc="Kolkata, India" desc="As an Associate software engineer, you’ll be working in a team and on diverse projects. To be successful in this role, you must possess strong analytical, problem solving and technical skills. You must be able to communicate clearly and confidently with the clients. You must be flexible enough and ready to work in Agile environment on any type of projects including 24X7 projects." eligible="CSE/EE/ME" sal="3.3 LPA" />
+            </div>
+          }
+        ></Route>
+        <Route
+          path="/desc5"
+          element={
+            <div className="containn">
+              <Side job="Jobs" sched="Schedule" apply="Applied Jobs" />
+              <Desc image={company5} cname="Accenture" role="ASE" loc="Noida, India" desc="As an Associate software engineer, you’ll be working in a team and on diverse projects. To be successful in this role, you must possess strong analytical, problem solving and technical skills. You must be able to communicate clearly and confidently with the clients. You must be flexible enough and ready to work in Agile environment on any type of projects including 24X7 projects." eligible="CSE/EE/MCA" sal="4.8 LPA" />
+            </div>
+          }
+        ></Route>
+        <Route
+          path="/desc6"
+          element={
+            <div className="containn">
+              <Side job="Jobs" sched="Schedule" apply="Applied Jobs" />
+              <Desc image={company6} cname="Infosys" role="Software Engineer" loc="Bangalore, India" desc="As an Associate software engineer, you’ll be working in a team and on diverse projects. To be successful in this role, you must possess strong analytical, problem solving and technical skills. You must be able to communicate clearly and confidently with the clients. You must be flexible enough and ready to work in Agile environment on any type of projects including 24X7 projects." eligible="CSE/EE/ME/MCA" sal="5.2 LPA" />
+            </div>
+          }
+        ></Route>
+        
         
       </Routes>
     </Router>

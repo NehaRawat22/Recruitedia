@@ -38,7 +38,7 @@ const StuTop = () => {
             <Link to="/recent" className="btnn">
               Explore News
             </Link>
-            <Link to="/jobs" className="btnn transparentt">
+            <Link to="/explore" className="btnn transparentt">
               Apply
             </Link>
           </div>
