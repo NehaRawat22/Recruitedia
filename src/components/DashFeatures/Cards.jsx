@@ -47,21 +47,20 @@ const Cards = () => {
               </div>
             </div>
           </li>
-          {/* Repeat the same for other cards */}
           <li className="cards_item">
             <div className="carder">
               <div className="card_image">
                 <img className="imager" src={dep2} alt="Mechanical Engineering" />
               </div>
-              <div class="card_content">
-                <h2 class="card_title">Mechanical Engineering</h2>
-                <p class="card_text">
+              <div className="card_content">
+                <h2 className="card_title">Mechanical Engineering</h2>
+                <p className="card_text">
                   Mechanical engineering is the study of physical machines that
                   may involve force and movement. It combines physics and
                   mathematics principles.
                 </p>
                 <button
-                  class="btner card_btn"
+                  className="btner card_btn"
                   onClick={() => handleEmailClick(
                     'example@example.com',
                     'Inquiry about Mechanical Engineering',
@@ -86,7 +85,7 @@ const Cards = () => {
                   devices.
                 </p>
                 <button
-                  class="btner card_btn"
+                  className="btner card_btn"
                   onClick={() => handleEmailClick(
                     'example@example.com',
                     'Inquiry about Electrical Engineering',
@@ -112,7 +111,7 @@ const Cards = () => {
                   works.
                 </p>
                 <button 
-                  class="btner card_btn"
+                  className="btner card_btn"
                   onClick={() => handleEmailClick(
                     'example@example.com',
                     'Inquiry about Civil Engineering',
@@ -136,7 +135,7 @@ const Cards = () => {
                   as methods of improving production.
                 </p>
                 <button 
-                class="btner card_btn"
+                className="btner card_btn"
                   onClick={() => handleEmailClick(
                     'example@example.com',
                     'Inquiry about Chemical Engineering',
@@ -161,7 +160,7 @@ const Cards = () => {
                   various useful things.
                 </p>
                 <button 
-                  class="btner card_btn"
+                  className="btner card_btn"
                   onClick={() => handleEmailClick(
                     'example@example.com',
                     'Inquiry about BioTechnology Engineering',

@@ -1,8 +1,8 @@
 import React from "react";
 import "./Body.css";
-import Top from "../BodySec/Top/Top";
-import Listing from "../BodySec/Listing/Listing";
-import Activity from "../BodySec/Activity/Activity";
+import Top from "./Top/Top";
+import Listing from "./Listing/Listing";
+import Activity from "./Activity/Activity";
 
 const Body = () => {
   return (

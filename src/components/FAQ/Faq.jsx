@@ -7,6 +7,7 @@ function Faq({ question,answer }){
     const [data, setData] = useState(ques);
   return (
    <>
+   <div className="mainContent">
    <div className='con'>
     <section className="main-div">
       <h1 className='heading'>FAQs</h1>
@@ -17,6 +18,7 @@ function Faq({ question,answer }){
         })
       }
     </section>
+    </div>
     </div>
     </>
   )
