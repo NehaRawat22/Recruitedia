@@ -32,7 +32,7 @@ const Top = () => {
           <h1>Acquiring right talent is the key to growth</h1>
           <p>Hiring was - and still is - the most important thing we do!</p>
           <div className="btnns flexer">
-            <button className="btnn">Explore News</button>
+            <Link to='/recent'className="btnn">Explore News</Link>
             <Link to='/jobs' className="btnn transparentt">Add Feed</Link>
             
           </div>

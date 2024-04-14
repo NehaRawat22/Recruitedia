@@ -6,7 +6,17 @@ import dep3 from "../../assets/elec.jpg";
 import dep4 from "../../assets/civv.jpg";
 import dep5 from "../../assets/chem.png";
 import dep6 from "../../assets/biotech.jpg";
+
 const Cards = () => {
+  // Function to handle email click and open Gmail directly
+  const handleEmailClick = (recipient, subject, body) => {
+    // Construct the mailto URL with Gmail-specific parameters
+    const gmailURL = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(recipient)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    // Open the Gmail compose URL in a new window
+    window.open(gmailURL, '_blank');
+  };
+
   return (
     <>
       <div className="mainer">
@@ -15,7 +25,7 @@ const Cards = () => {
           <li className="cards_item">
             <div className="carder">
               <div className="card_image">
-                <img className="imager" src={dep1} />
+                <img className="imager" src={dep1} alt="CSE" />
               </div>
               <div className="card_content">
                 <h2 className="card_title">Computer Science & Engineering</h2>
@@ -24,23 +34,42 @@ const Cards = () => {
                   management of information systems of both software and
                   hardware processes.
                 </p>
-                <button className="btner card_btn">Explore</button>
+                <button
+                  className="btner card_btn"
+                  onClick={() => handleEmailClick(
+                    'example@example.com',
+                    'Inquiry about Computer Science & Engineering',
+                    'I would like to inform you that....'
+                  )}
+                >
+                  Contact
+                </button>
               </div>
             </div>
           </li>
+          {/* Repeat the same for other cards */}
           <li className="cards_item">
             <div className="carder">
               <div className="card_image">
-                <img className="imager" src={dep2} />
+                <img className="imager" src={dep2} alt="Mechanical Engineering" />
               </div>
-              <div className="card_content">
-                <h2 className="card_title">Mechanical Engineering</h2>
-                <p className="card_text">
+              <div class="card_content">
+                <h2 class="card_title">Mechanical Engineering</h2>
+                <p class="card_text">
                   Mechanical engineering is the study of physical machines that
                   may involve force and movement. It combines physics and
                   mathematics principles.
                 </p>
-                <button className="btner card_btn">Explore</button>
+                <button
+                  class="btner card_btn"
+                  onClick={() => handleEmailClick(
+                    'example@example.com',
+                    'Inquiry about Mechanical Engineering',
+                    'I would like to inform you that...'
+                  )}
+                >
+                  Contact
+                </button>
               </div>
             </div>
           </li>
@@ -56,7 +85,16 @@ const Cards = () => {
                   with the study, design, and application of equipment and
                   devices.
                 </p>
-                <button className="btner card_btn">Explore</button>
+                <button
+                  class="btner card_btn"
+                  onClick={() => handleEmailClick(
+                    'example@example.com',
+                    'Inquiry about Electrical Engineering',
+                    'I would like to inform you that...'
+                  )}
+                >
+                  Contact
+                </button>
               </div>
             </div>
           </li>
@@ -73,7 +111,15 @@ const Cards = () => {
                   the physical and naturally built environment, including public
                   works.
                 </p>
-                <button className="btner card_btn">Explore</button>
+                <button 
+                  class="btner card_btn"
+                  onClick={() => handleEmailClick(
+                    'example@example.com',
+                    'Inquiry about Civil Engineering',
+                    'I would like to inform you that...'
+                  )}>
+                  Contact
+                </button>
               </div>
             </div>
           </li>
@@ -89,7 +135,15 @@ const Cards = () => {
                   the study of operation and design of chemical plants as well
                   as methods of improving production.
                 </p>
-                <button className="btner card_btn">Explore</button>
+                <button 
+                class="btner card_btn"
+                  onClick={() => handleEmailClick(
+                    'example@example.com',
+                    'Inquiry about Chemical Engineering',
+                    'I would like to inform you that...'
+                  )}>
+                    Contact
+                </button>
               </div>
             </div>
           </li>
@@ -106,7 +160,15 @@ const Cards = () => {
                   of living things in technology, engineering, medicine, and
                   various useful things.
                 </p>
-                <button className="btner card_btn">Explore</button>
+                <button 
+                  class="btner card_btn"
+                  onClick={() => handleEmailClick(
+                    'example@example.com',
+                    'Inquiry about BioTechnology Engineering',
+                    'I would like to inform you that...'
+                  )}>
+                    Contact
+                </button>
               </div>
             </div>
           </li>
