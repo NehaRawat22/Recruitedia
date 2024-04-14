@@ -1,6 +1,7 @@
 import React from "react";
 import "../../BodySec/Activity/Activity.css";
 import "../../Update/Jobs.css";
+import './Profile.css';
 
 const Profile = () => {
   return (
@@ -10,7 +11,7 @@ const Profile = () => {
       </div>
 
       <main>
-        <ol class="gradient-list">
+        <ol className="gradient-list">
           <li>College: KNIT, Sultanpur</li>
           <li>Full Name: Stuti Sharma</li>
           <li>Date of Birth: 22/02/2002</li>
@@ -26,7 +27,7 @@ const Profile = () => {
                 color: "white",
               }}
             >
-              Resume
+              RESUME
             </button>
           </div>
         </ol>
