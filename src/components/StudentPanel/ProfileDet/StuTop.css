@@ -1,0 +1,48 @@
+:root {
+  --PrimaryColor: rgba(1, 8, 81, 1);
+  --HoverColor: rgba(29, 78, 216, 1);
+  --paleBlue: rgb(115, 142, 216);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(0, 0%, 41%);
+  --bgColor: hsl(220, 10%, 94%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+}
+
+.topSection .cardSection .leftCard .mains .imgPro {
+  transform: translateY(-20px);
+}
+.topSection .cardSection .leftCard .mains .imgPro img {
+  width: 160px;
+  height: 160px;
+  border-radius: 100px;
+}
+.topSection .cardSection .leftCard .mains .textDiv .flexess {
+  gap: 1.5rem;
+  font-weight: 500;
+  color: var(--blackColor);
+}
+.topSection .cardSection .leftCard .mains .textDiv .flexess small {
+  font-size: var(--normalFontSize);
+  display: block;
+  color: var(--PrimaryColor);
+  font-weight: 500;
+  padding: 0.5rem 0;
+}
+.topSection .cardSection .leftCard .mains .shad {
+  color: var(--whiteColor) !important;
+}
+@media (max-width: 500px) {
+  .topSection .cardSection .leftCard .mains .imgPro {
+    display: none;
+  }
+}

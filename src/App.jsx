@@ -17,6 +17,7 @@ import Jobs from "./components/Update/Jobs";
 import Drives from "./components/Recents/Drives";
 import Explore from "./components/Recents/Explore";
 import Details from "./components/Details/Details";
+import BodyStu from "./components/StudentPanel/BodyStu";
 
 function App() {
   return (
@@ -46,7 +47,12 @@ function App() {
           path="/dashboard"
           element={
             <div className="containn">
-              <SideBar /> <Body />
+              <SideBar
+                job="Update Jobs"
+                sched="Departments"
+                apply="Placed Students"
+              />{" "}
+              <Body />
             </div>
           }
         ></Route>
@@ -54,7 +60,11 @@ function App() {
           path="/departments"
           element={
             <div className="containn">
-              <SideBar />
+              <SideBar
+                job="Update Jobs"
+                sched="Departments"
+                apply="Placed Students"
+              />
               <Dashes />
             </div>
           }
@@ -63,7 +73,11 @@ function App() {
           path="/stu"
           element={
             <div className="containn">
-              <SideBar />
+              <SideBar
+                job="Update Jobs"
+                sched="Departments"
+                apply="Placed Students"
+              />
               <PlacedStu />
             </div>
           }
@@ -72,7 +86,11 @@ function App() {
           path="/jobs"
           element={
             <div className="containn">
-              <SideBar />
+              <SideBar
+                job="Update Jobs"
+                sched="Departments"
+                apply="Placed Students"
+              />
               <Jobs />
             </div>
           }
@@ -81,7 +99,11 @@ function App() {
           path="/recent"
           element={
             <div className="containn">
-              <SideBar />
+              <SideBar
+                job="Update Jobs"
+                sched="Departments"
+                apply="Placed Students"
+              />
               <Drives />
             </div>
           }
@@ -90,8 +112,21 @@ function App() {
           path="/explore"
           element={
             <div className="containn">
-              <SideBar />
+              <SideBar
+                job="Update Jobs"
+                sched="Departments"
+                apply="Placed Students"
+              />
               <Explore />
+            </div>
+          }
+        ></Route>
+        <Route
+          path="/studashboard"
+          element={
+            <div className="containn">
+              <SideBar job="Jobs" sched="Schedule" apply="Applied Jobs" />
+              <BodyStu />
             </div>
           }
         ></Route>

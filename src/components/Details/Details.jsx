@@ -46,8 +46,7 @@ const Details = () => {
       image &&
       resume
     ) {
-      // If all fields are filled, navigate to the dashboard
-      navigate("/dashboard");
+      navigate("/studashboard");
     } else {
       alert("Please fill all the required fields before submitting.");
     }
@@ -150,7 +149,6 @@ const Details = () => {
               <div className="underliner"></div>
               <label htmlFor="dob"></label>
             </div>
-            
           </div>
           <div className="form-rowed submit-btn">
             <div className="input-datas">

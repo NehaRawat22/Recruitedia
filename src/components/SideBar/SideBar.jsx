@@ -8,7 +8,7 @@ import { FaAward } from "react-icons/fa6";
 import { FaRegCircleQuestion } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
-const SideBar = () => {
+const SideBar = (props) => {
   return (
     <div className="sideBar grider">
       <div className="logoDiv flexer">
@@ -28,21 +28,21 @@ const SideBar = () => {
           <li className="listItem">
             <Link to="/jobs" className="menuLink flexer">
               <PiSuitcaseSimple className="iconn" />
-              <span className="smallText">Update Jobs</span>
+              <span className="smallText">{props.job}</span>
             </Link>
           </li>
 
           <li className="listItem">
             <Link to="/departments" className="menuLink flexer">
               <GoOrganization className="iconn" />
-              <span className="smallText">Departments</span>
+              <span className="smallText">{props.sched}</span>
             </Link>
           </li>
 
           <li className="listItem">
             <Link to="/stu" className="menuLink flexer">
               <FaAward className="iconn" />
-              <span className="smallText">Placed Students</span>
+              <span className="smallText">{props.apply}</span>
             </Link>
           </li>
 
