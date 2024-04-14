@@ -38,7 +38,7 @@ const Home = () => {
               <div className="px-9">
                 <button className="py-12">
                   <Link
-                    to="/details"
+                    to="/dashboard"
                     className="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-blue-700 rounded-xl group"
                   >
                     <span className="absolute top-0 right-0 inline-block w-6 h-6 transition-all duration-500 ease-in-out bg-blue-900 rounded group-hover:-mr-4 group-hover:-mt-4">
@@ -53,7 +53,7 @@ const Home = () => {
 
                 <button className="px-3">
                   <Link
-                    to="/login"
+                    to="/details"
                     className="relative inline-flex items-center justify-start px-7 py-3 overflow-hidden font-medium transition-all bg-blue-600 rounded-xl group"
                   >
                     <span className="absolute top-0 right-0 inline-block w-6 h-6 transition-all duration-500 ease-in-out bg-blue-800 rounded group-hover:-mr-4 group-hover:-mt-4">
