@@ -179,7 +179,7 @@ function App() {
           element={
             <div className="containn">
               <Side job="Jobs" sched="Schedule" apply="Applied Jobs" />
-              <Desc image={company4} cname="Dell" role="BDA" loc="Kolkata, India" desc="As an Associate software engineer, you’ll be working in a team and on diverse projects. To be successful in this role, you must possess strong analytical, problem solving and technical skills. You must be able to communicate clearly and confidently with the clients. You must be flexible enough and ready to work in Agile environment on any type of projects including 24X7 projects." eligible="CSE/EE/ME" sal="3.3 LPA" />
+              <Desc image={company4} cname="Dell" role="BDE" loc="Kolkata, India" desc="The Business Development Executive for Domestic Staffing is responsible for driving business growth and revenue generation for our domestic staffing agency. This role involves identifying and engaging with potential clients, building lasting relationships, and ensuring the successful placement of domestic staff with families." eligible="CSE/EE/ME" sal="3.3 LPA" />
             </div>
           }
         ></Route>
@@ -188,7 +188,7 @@ function App() {
           element={
             <div className="containn">
               <Side job="Jobs" sched="Schedule" apply="Applied Jobs" />
-              <Desc image={company5} cname="Accenture" role="ASE" loc="Noida, India" desc="As an Associate software engineer, you’ll be working in a team and on diverse projects. To be successful in this role, you must possess strong analytical, problem solving and technical skills. You must be able to communicate clearly and confidently with the clients. You must be flexible enough and ready to work in Agile environment on any type of projects including 24X7 projects." eligible="CSE/EE/MCA" sal="4.8 LPA" />
+              <Desc image={company5} cname="Accenture" role="ASE" loc="Noida, India" desc="The Associate Software Engineer will be part of the software development team and participates in all phases of the software development project life cycle, includes analysis, design, develop code, test business software applications and project implementation. Assist in defining and reviewing requirements and use cases for the application and Design the application to meet the business process design and application requirements." eligible="CSE/EE/MCA" sal="4.8 LPA" />
             </div>
           }
         ></Route>
@@ -197,7 +197,7 @@ function App() {
           element={
             <div className="containn">
               <Side job="Jobs" sched="Schedule" apply="Applied Jobs" />
-              <Desc image={company6} cname="Infosys" role="Software Engineer" loc="Bangalore, India" desc="As an Associate software engineer, you’ll be working in a team and on diverse projects. To be successful in this role, you must possess strong analytical, problem solving and technical skills. You must be able to communicate clearly and confidently with the clients. You must be flexible enough and ready to work in Agile environment on any type of projects including 24X7 projects." eligible="CSE/EE/ME/MCA" sal="5.2 LPA" />
+              <Desc image={company6} cname="Infosys" role="Software Engineer" loc="Bangalore, India" desc="Infosys is a global leader in next-generation digital services and consulting. We enable clients in 45 countries to navigate their digital transformation. With over three decades of experience in managing the systems and workings of global enterprises, we expertly steer our clients through the many nexts of their digital journey. We do it by enabling the enterprise with an AI-powered core that helps prioritize the execution of change." eligible="CSE/EE/ME/MCA" sal="5.2 LPA" />
             </div>
           }
         ></Route>

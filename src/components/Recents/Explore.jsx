@@ -101,7 +101,7 @@ const Explore = () => {
                   </div>
                 </div>
                 <p className="card__description">
-                  Role: BDA <br />
+                  Role: BDE <br />
                   Eligibility: BTech CSE,EE,ME <br />
                   Salary Package: 3.3 LPA
                   <br />
