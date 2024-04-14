@@ -1,0 +1,74 @@
+:root {
+  --PrimaryColor: rgba(1, 8, 81, 1);
+  --HoverColor: rgba(29, 78, 216, 1);
+  --paleBlue: rgb(115, 142, 216);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(0, 0%, 41%);
+  --bgColor: hsl(220, 10%, 94%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+}
+
+.applied-containn {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.applied-containn h3 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: var(--PrimaryColor);
+}
+
+.applied-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.applied-list li {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.clear-btn {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: var(--HoverColor);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.clear-btn:hover {
+  background-color: var(--paleBlue);
+}
+.rolee {
+  text-transform: uppercase;
+  color: var(--PrimaryColor);
+}
+.sall {
+  font-weight: 600;
+}
+.eli {
+  color: var(--textColor);
+  font-weight: 600;
+}

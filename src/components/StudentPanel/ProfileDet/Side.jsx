@@ -40,7 +40,7 @@ const Side = (props) => {
           </li>
 
           <li className="listItem">
-            <Link to="/studashboard" className="menuLink flexer">
+            <Link to="/applied" className="menuLink flexer">
               <FaAward className="iconn" />
               <span className="smallText">{props.apply}</span>
             </Link>

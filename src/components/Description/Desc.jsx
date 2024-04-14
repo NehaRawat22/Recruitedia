@@ -1,34 +1,43 @@
-import React from 'react'
-import './Desc.css';
-
+import React from "react";
+import "./Desc.css";
 
 const Desc = (props) => {
+  const handleApplyClick = () => {
+    const jobDetails = {
+      cname: props.cname,
+      role: props.role,
+      loc: props.loc,
+      desc: props.desc,
+      eligible: props.eligible,
+      sal: props.sal,
+      image: props.image,
+    };
+
+    props.handleApplyNow(jobDetails);
+  };
+
   return (
     <div className="mainContent">
-    <div className="container">
+      <div className="container">
         <div className="imgBx">
-            <img src={props.image} alt=""/>
+          <img src={props.image} alt="" />
         </div>
         <div className="details">
-            <div className="content">
-                <h2>{props.cname}<br/>
-                    <span>{props.role}</span><br/>
-                    <span>{props.loc}</span>
-                </h2>
-                <p>
-                {props.desc}
-                </p>
-                <h5>Eligibility Criteria: </h5>
-                <div className="product-colors">
-                    <p>{props.eligible}</p>
-                </div>
-                <h3>Rs. {props.sal}</h3>
-                <button>Apply Now</button>
-            </div>
+          <div className="content">
+            <h2>{props.cname}</h2>
+            <p>
+              {props.role} - {props.loc}
+            </p>
+            <p>{props.desc}</p>
+            <h5>Eligibility Criteria:</h5>
+            <p>{props.eligible}</p>
+            <h3>Rs. {props.sal}</h3>
+            <button onClick={handleApplyClick}>Apply Now</button>
+          </div>
         </div>
+      </div>
     </div>
-    </div>
-  )
-}
+  );
+};
 
-export default Desc
+export default Desc;
