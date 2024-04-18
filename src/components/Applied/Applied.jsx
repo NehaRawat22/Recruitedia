@@ -8,8 +8,8 @@ const Applied = ({ appliedJobs, clearAppliedJobs }) => {
 
   return (
     <div className="mainContent">
+    <h2 className="titler">Applied Jobs</h2>
       <div className="applied-containn">
-        <h3>Applied Jobs</h3>
         <ul className="applied-list">
           {appliedJobs.map((job, index) => (
             <li key={index}>

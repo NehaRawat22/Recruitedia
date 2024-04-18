@@ -28,6 +28,7 @@ import Side from "./components/StudentPanel/ProfileDet/Side";
 import Desc from "./components/Description/Desc";
 import Applied from "./components/Applied/Applied";
 import { useEffect, useState } from "react";
+import PlacementProcess from "./components/Schedule/PlacementProcess";
 
 function App() {
   const [appliedJobs, setAppliedJobs] = useState([]);
@@ -298,6 +299,15 @@ function App() {
                 appliedJobs={appliedJobs}
                 clearAppliedJobs={clearAppliedJobs}
               />
+            </div>
+          }
+        ></Route>
+        <Route
+          path="/schedule"
+          element={
+            <div className="containn">
+              <Side job="Jobs" sched="Schedule" apply="Applied Jobs" />
+              <PlacementProcess appliedJobs={appliedJobs}/>
             </div>
           }
         ></Route>
