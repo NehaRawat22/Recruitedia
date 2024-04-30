@@ -27,7 +27,7 @@ import BodyStu from "./components/Users/BodyStu";
 import Side from "./components/Users/Side";
 import Desc from "./components/Users/Desc";
 import Applied from "./components/Users/Applied";
-import StuDrive from "./components/Users/StuDrive";
+import Applied from "./components/Users/StuDrive";
 import { useEffect, useState } from "react";
 import PlacementProcess from "./components/Users/PlacementProcess";
 
