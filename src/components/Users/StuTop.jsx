@@ -1,9 +1,9 @@
 import React from "react";
-import "./StuTop.css";
-import "../../BodySec/Top/Top.css";
+import "../UserStyles/StuTop.css";
+import "../BodySec/Top/Top.css";
 import { IoIosLogOut } from "react-icons/io";
-import img from "../../../assets/pic.jpg";
-import tech from "../../../assets/tech.mp4";
+import img from "../../assets/pic.jpg";
+import tech from "../../assets/tech.mp4";
 import { Link } from "react-router-dom";
 
 const StuTop = () => {
@@ -35,10 +35,10 @@ const StuTop = () => {
           <h1>Acquiring right talent is the key to growth</h1>
           <p>Hiring was - and still is - the most important thing we do!</p>
           <div className="btnns flexer">
-            <Link to="/recent" className="btnn">
+            <Link to="/studrive" className="btnn">
               Explore News
             </Link>
-            <Link to="/explore" className="btnn transparentt">
+            <Link to="/stuexplore" className="btnn transparentt">
               Apply
             </Link>
           </div>

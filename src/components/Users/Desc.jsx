@@ -1,5 +1,5 @@
 import React from "react";
-import "./Desc.css";
+import "../UserStyles/Desc.css";
 
 const Desc = (props) => {
     const scheduledProcesses = {

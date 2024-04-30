@@ -1,5 +1,5 @@
-import "../../SideBar/SideBar.css";
-import logo from "../../../assets/logo.png";
+import "../SideBar/SideBar.css";
+import logo from "../../assets/logo.png";
 import { IoIosLogOut } from "react-icons/io";
 import { PiSuitcaseSimple } from "react-icons/pi";
 import { PiStudentFill } from "react-icons/pi";

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Applied.css";
+import "../UserStyles/Applied.css";
 
 const Applied = ({ appliedJobs, clearAppliedJobs }) => {
   if (!appliedJobs || !Array.isArray(appliedJobs)) {

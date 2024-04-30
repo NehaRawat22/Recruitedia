@@ -1,7 +1,7 @@
 import React from "react";
-import "../../BodySec/Activity/Activity.css";
-import "../../Update/Jobs.css";
-import './Profile.css';
+import "../BodySec/Activity/Activity.css";
+import "../Update/Jobs.css";
+import '../UserStyles/Profile.css';
 
 const Profile = () => {
   return (

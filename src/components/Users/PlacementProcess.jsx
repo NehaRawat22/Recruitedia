@@ -1,5 +1,5 @@
 import React from "react";
-import "./PlacementProcess.css";
+import "../UserStyles/PlacementProcess.css";
 
 const PlacementProcess = ({ appliedJobs }) => {
   if (!appliedJobs || !Array.isArray(appliedJobs)) {

@@ -22,13 +22,14 @@ import PlacedStu from "./components/Placed/PlacedStu";
 import Jobs from "./components/Update/Jobs";
 import Drives from "./components/Recents/Drives";
 import Explore from "./components/Recents/Explore";
-import Details from "./components/Details/Details";
-import BodyStu from "./components/StudentPanel/BodyStu";
-import Side from "./components/StudentPanel/ProfileDet/Side";
-import Desc from "./components/Description/Desc";
-import Applied from "./components/Applied/Applied";
+import Details from "./components/Users/Details";
+import BodyStu from "./components/Users/BodyStu";
+import Side from "./components/Users/Side";
+import Desc from "./components/Users/Desc";
+import Applied from "./components/Users/Applied";
+import StuDrive from "./components/Users/StuDrive";
 import { useEffect, useState } from "react";
-import PlacementProcess from "./components/Schedule/PlacementProcess";
+import PlacementProcess from "./components/Users/PlacementProcess";
 
 function App() {
   const [appliedJobs, setAppliedJobs] = useState([]);
@@ -158,6 +159,7 @@ function App() {
             </div>
           }
         ></Route>
+        
         <Route
           path="/studashboard"
           element={
@@ -173,6 +175,15 @@ function App() {
             <div className="containn">
               <Side job="Jobs" sched="Schedule" apply="Applied Jobs" />
               <Explore />
+            </div>
+          }
+        ></Route>
+        <Route
+          path="/studrive"
+          element={
+            <div className="containn">
+              <Side job="Jobs" sched="Schedule" apply="Applied Jobs" />
+              <StuDrive />
             </div>
           }
         ></Route>
@@ -308,6 +319,24 @@ function App() {
             <div className="containn">
               <Side job="Jobs" sched="Schedule" apply="Applied Jobs" />
               <PlacementProcess appliedJobs={appliedJobs}/>
+            </div>
+          }
+        ></Route>
+        <Route
+          path="/sturecent"
+          element={
+            <div className="containn">
+              <Side job="Jobs" sched="Schedule" apply="Applied Jobs"/>
+              <Drives />
+            </div>
+          }
+        ></Route>
+        <Route
+          path="/stuexplore"
+          element={
+            <div className="containn">
+              <Side job="Jobs" sched="Schedule" apply="Applied Jobs"/>
+              <Explore />
             </div>
           }
         ></Route>
