@@ -105,7 +105,7 @@ const Footer = () => {
                 <Link to="/faq" className="block hover:text-gray-300">
                   How to create?
                 </Link>
-                <Link to="/faq" className="block hover:text-gray-300">
+                <Link to="/error" className="block hover:text-gray-300">
                   What is needed for this?
                 </Link>
               </ul>

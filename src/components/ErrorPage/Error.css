@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+  --PrimaryColor: rgba(1, 8, 81, 1);
+  --HoverColor: rgba(29, 78, 216, 1);
+  --paleBlue: rgb(115, 142, 216);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(0, 0%, 41%);
+  --bgColor: hsl(220, 10%, 94%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.5rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+}
+
+.page_404 {
+  font-family: "Arvo", serif;
+}
+.page_404 img {
+  width: 100%;
+}
+
+.four_zero_four_bg {
+  background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+  height: 500px;
+  width: 900px;
+  background-position: center;
+}
+
+.h2 {
+  font-size: var(--h1FontSize);
+}
+.four_zero_four_bg h1 {
+  font-size: 80px;
+}
+
+.four_zero_four_bg h3 {
+  font-size: 40px;
+}
+
+.link_404 {
+  color: #fff !important;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: var(--PrimaryColor);
+  display: inline-block;
+  border-radius: 12px;
+}
+.link_404:hover{
+    background-color: var(--HoverColor);
+    transition: all ease-out 0.3s;
+}
+
+@media screen and (max-width: 890px){
+    .four_zero_four_bg {
+        width: 700px;
+      }
+}
+@media screen and (max-width: 790px){
+    .four_zero_four_bg {
+        width: 600px;
+      }
+}
+@media screen and (max-width: 630px){
+    .four_zero_four_bg {
+        width: 100%;
+      }
+}

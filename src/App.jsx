@@ -30,6 +30,7 @@ import Applied from "./components/Users/Applied";
 import StuDrive from "./components/Users/StuDrive";
 import { useEffect, useState } from "react";
 import PlacementProcess from "./components/Users/PlacementProcess";
+import Error from "./components/ErrorPage/Error";
 
 function App() {
   const [appliedJobs, setAppliedJobs] = useState([]);
@@ -340,6 +341,12 @@ function App() {
             </div>
           }
         ></Route>
+        <Route
+          path="/error"
+          element={<Error/>}
+        >
+
+        </Route>
       </Routes>
     </Router>
   );
