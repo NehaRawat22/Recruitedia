@@ -27,10 +27,9 @@
   width: 100%;
 }
 
-.four_zero_four_bg {
-  background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
-  height: 500px;
-  width: 900px;
+.four_zero_four_bg img{
+  height: 350px;
+  width: 100%;
   background-position: center;
 }
 
@@ -38,13 +37,12 @@
   font-size: var(--h1FontSize);
 }
 .four_zero_four_bg h1 {
-  font-size: 80px;
+  font-size: 70px;
 }
 
 .four_zero_four_bg h3 {
   font-size: 40px;
 }
-
 .link_404 {
   color: #fff !important;
   margin-top: 20px;
@@ -58,18 +56,4 @@
     transition: all ease-out 0.3s;
 }
 
-@media screen and (max-width: 890px){
-    .four_zero_four_bg {
-        width: 700px;
-      }
-}
-@media screen and (max-width: 790px){
-    .four_zero_four_bg {
-        width: 600px;
-      }
-}
-@media screen and (max-width: 630px){
-    .four_zero_four_bg {
-        width: 100%;
-      }
-}
+
