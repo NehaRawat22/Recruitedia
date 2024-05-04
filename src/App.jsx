@@ -342,7 +342,7 @@ function App() {
           }
         ></Route>
         <Route
-          path="/404-Not-Found"
+          path="/404-not-found"
           element={<Error/>}
         >
 
