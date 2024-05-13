@@ -1,15 +1,9 @@
-import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import logo from "../assets/logo.png";
-import back from "../assets/bb.jpg";
+import React from "react";
+import back from "../assets/login.jpg";
 import { FcGoogle } from "react-icons/fc";
-
 import './Login.css';
 
 const Login = () => {
-  
-
-
   return (
     <div>
       <div className="login mainer">
